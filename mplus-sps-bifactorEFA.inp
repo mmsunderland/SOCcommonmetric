@@ -1,0 +1,15 @@
+title: unidimensional testing of sad bank and sias;
+
+data: file is mplus-sps.csv;
+
+variable: names are sadbnk1-sadbnk26 sps1-sps20;
+
+usevar are sadbnk1-sadbnk26 sps1-sps20;
+
+categorical are sadbnk1-sadbnk26 sps1-sps20;
+
+analysis: type is EFA 4 4;
+            rotation = BI-GEOMIN(ORTHOGONAL);
+
+
+output: standardized;

@@ -1,0 +1,15 @@
+title: unidimensional testing of sad bank and lsas;
+
+data: file is mplus-lsas.csv;
+
+variable: names are sadbnk1-sadbnk26 lsas1-lsas24;
+
+usevar are sadbnk1-sadbnk26 lsas1-lsas24;
+
+categorical are sadbnk1-sadbnk26 lsas1-lsas24;
+
+analysis: estimator is wlsmv;
+
+model: f1 by sadbnk1-sadbnk26 lsas1-lsas24;
+
+output: standardized;

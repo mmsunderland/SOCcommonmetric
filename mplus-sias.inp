@@ -1,0 +1,15 @@
+title: unidimensional testing of sad bank and sias1-sias20;
+
+data: file is mplus-sias.csv;
+
+variable: names are sadbnk1-sadbnk26 sias1-sias20;
+
+usevar are sadbnk1-sadbnk26 sias1-sias20;
+
+categorical are sadbnk1-sadbnk26 sias1-sias20;
+
+analysis: estimator is wlsmv;
+
+model: f1 by sadbnk1-sadbnk26 sias1-sias20;
+
+output: standardized;

@@ -1,0 +1,15 @@
+title: unidimensional testing of sad bank and dsmsad;
+
+data: file is mplus-dsmsad.csv;
+
+variable: names are sadbnk1-sadbnk26 dsmsad1-dsmsad10;
+
+usevar are sadbnk1-sadbnk26 dsmsad1-dsmsad10;
+
+categorical are sadbnk1-sadbnk26 dsmsad1-dsmsad10;
+
+analysis: type is EFA 4 4;
+            rotation = BI-GEOMIN(ORTHOGONAL);
+
+
+output: standardized;

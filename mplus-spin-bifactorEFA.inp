@@ -1,0 +1,13 @@
+title: unidimensional testing of sad bank and spin1-spin17;
+
+data: file is mplus-spin.csv;
+
+variable: names are sadbnk1-sadbnk26 spin1-spin17;
+
+usevar are sadbnk1-sadbnk26 spin1-spin17;
+
+categorical are sadbnk1-sadbnk26 spin1-spin17;
+
+analysis: type is EFA 2 5;
+            rotation = BI-GEOMIN(ORTHOGONAL);
+
